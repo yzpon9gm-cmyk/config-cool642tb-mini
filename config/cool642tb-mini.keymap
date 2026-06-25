@@ -70,10 +70,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W      &kp E         &kp R                   &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A                 &kp S      &kp D         &lt 4 F                 &kp G        &kp LC(Y)       &kp ESC        &kp H        &kp J  &lt 5 K    &kp L    &kp MINUS
-&mt LEFT_SHIFT Z      &kp X      &kp C         &kp V                   &kp B        &kp SLASH       &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
-&mt LEFT_CONTROL TAB  &kp PSCRN  &kp LEFT_GUI  &mt LEFT_ALT JP_HANZEN  &lt 2 SPACE  &kp DELETE      &kp BACKSPACE  &lt 1 ENTER                             &mt RIGHT_CONTROL JP_UNDERSCORE
+&kp Q                 &kp W      &kp E         &kp R         &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A                 &kp S      &kp D         &lt 4 F       &kp G        &kp LC(Y)       &kp ESC        &kp H        &kp J  &lt 5 K    &kp L    &kp MINUS
+&mt LEFT_SHIFT Z      &kp X      &kp C         &kp V         &kp B        &kp SLASH       &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SEMICOLON
+&mt LEFT_CONTROL TAB  &kp PSCRN  &kp LEFT_GUI  &kp LEFT_ALT  &lt 2 SPACE  &kp DELETE      &kp BACKSPACE  &lt 1 ENTER                             &mt RIGHT_CONTROL JP_UNDERSCORE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -90,10 +90,10 @@
 
         NUM {
             bindings = <
-&kp LS(EXCL)      &kp JP_DQUOTE       &kp LS(POUND)  &kp LS(DLLR)        &kp LS(PRCNT)                                 &kp KP_ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&kp JP_AMPERSAND  &kp JP_QUOTE        &kp JP_TILDE   &kp JP_YEN          &kp JP_PIPE           &kp LS(LT)      &none   &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_PLUS
+&kp LS(EXCL)      &kp JP_DQUOTE       &kp LS(POUND)  &kp LS(DLLR)        &kp LS(PRCNT)                                 &kp KP_ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_PLUS
+&kp JP_AMPERSAND  &kp JP_QUOTE        &kp JP_TILDE   &kp JP_YEN          &kp JP_PIPE           &kp LS(LT)      &none   &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &bt BT_SEL 0      &bt BT_SEL 1        &bt BT_SEL 2   &bt BT_SEL 3        &bt BT_SEL 4          &trans          &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp JP_EQUAL
-&bt BT_CLR        &trans              &trans         &trans              &trans                &trans          &trans  &trans                                                     &trans
+&bt BT_CLR        &trans              &trans         &trans              &trans                &trans          &trans  &trans                                                     &kp CARET
             >;
         };
 
