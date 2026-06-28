@@ -57,7 +57,7 @@
 
         test {
             bindings = <&none>;
-            key-positions = <34 20>;
+            key-positions = <34 20 22>;
         };
     };
 
