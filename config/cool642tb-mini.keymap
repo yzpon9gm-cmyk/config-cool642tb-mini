@@ -43,7 +43,7 @@
 };
 
 &mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 10000>;
+    input-processors = <&zip_temp_layer 5 100000>;
 };
 
 / {
@@ -162,8 +162,8 @@
             bindings = <
 &trans                                         &trans  &trans  &trans  &trans                      &trans    &trans    &mkp MB3  &trans    &trans
 &trans                                         &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &trans    &mkp MB2  &mkp MB5
-&mt_exit_AML_on_tap LEFT_SHIFT LEFT_SHIFT      &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans    &trans
-&mt_exit_AML_on_tap LEFT_CONTROL LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &kp RIGHT_CONTROL
+&mt_exit_AML_on_tap LEFT_SHIFT Z      　　　　　&trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans    &trans
+&mt_exit_AML_on_tap LEFT_CONTROL TAB  　　　　　&trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &kp RIGHT_CONTROL
             >;
         };
 
