@@ -131,9 +131,9 @@
 
         FUNCTION {
             bindings = <
-&kp F10              &kp F11  &kp F12  &kp LESS_THAN    &kp GREATER_THAN                         &none   &kp HOME  &kp UP_ARROW  &kp END          &none
-&kp F7               &kp F8   &kp F9   &kp JP_LPAREN    &kp JP_RPAREN     &kp UNDER      &none   &none   &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &none
-&mt LEFT_SHIFT F4    &kp F5   &kp F6   &kp JP_LBRACKET  &kp JP_RBRACKET   &kp JP_AT      &trans  &none   &none     &none         &none            &none
+&kp F10              &kp F11  &kp F12  &kp LESS_THAN    &kp GREATER_THAN                         &trans  &kp HOME  &kp UP_ARROW  &kp END          &none
+&kp F7               &kp F8   &kp F9   &kp JP_LPAREN    &kp JP_RPAREN     &kp UNDER      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &none
+&mt LEFT_SHIFT F4    &kp F5   &kp F6   &kp JP_LBRACKET  &kp JP_RBRACKET   &kp JP_AT      &trans  &trans  &trans    &trans        &trans           &none
 &mt LEFT_CONTROL F1  &kp F2   &kp F3   &kp JP_LBRACE    &kp JP_RBRACE     &trans         &trans  &trans                                           &none
             >;
         };
