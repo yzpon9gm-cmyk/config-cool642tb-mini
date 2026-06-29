@@ -42,6 +42,7 @@
     quick-tap-ms = <0>;
 };
 
+// AML時間延長とレイヤー移動が重なるとAMLから離脱できなくなるバグが発生しやすいため削除
 // &mkp_input_listener {
 //     input-processors = <&zip_temp_layer 5 10000>;
 // };
