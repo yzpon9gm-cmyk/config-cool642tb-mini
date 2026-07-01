@@ -1,5 +1,6 @@
 #include "cool642tb-mini.dtsi"
 #include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <mouse-gesture.dtsi>   /* kot149 モジュール */
 
 #define MOUSE_LAYER 4
