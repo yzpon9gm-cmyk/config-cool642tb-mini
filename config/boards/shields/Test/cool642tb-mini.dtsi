@@ -1,5 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
+#include <mouse-gesture.dtsi>   /* kot149 モジュール */
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
     chosen {
@@ -112,4 +114,19 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
     };
+};
+
+&zip_mouse_gesture {
+    stroke-size = <300>;
+    enable-eager-mode;
+    prev_tab   { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    next_tab   { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     };
+    Create_tab { pattern = <GESTURE_UP>;    bindings = <&kp LC(T)>;      };
+    close_tab  { pattern = <GESTURE_DOWN>;  bindings = <&kp LC(W)>;       };
+};
+
+&trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>; /* 実際のデバイスノード名に合わせる */
+    input-processors = <&zip_mouse_gesture>;
 };
