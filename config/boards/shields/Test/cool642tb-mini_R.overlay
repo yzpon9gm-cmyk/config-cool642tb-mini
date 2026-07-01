@@ -1,5 +1,6 @@
 #include "cool642tb-mini.dtsi"
 #include <input/processors.dtsi>
+#include <mouse-gesture.dtsi>   /* kot149 モジュール */
 
 #define MOUSE_LAYER 4
 
@@ -36,9 +37,46 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer MOUSE_LAYER 100000>;
+        AML {
+            input-processors = <&zip_temp_layer MOUSE_LAYER 100000>;
+        };
+
+        gest_on_l7 {
+            layers = <7>;
+            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        };
+
+        //gest_on_l8 {
+        //    layers = <8>;
+        //    input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
+        //};
+
+        //gest_on_l9 {
+        //    layers = <9>;
+        //    input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
+        //};
     };
 };
+
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        // Layer 7 に入ったらジェスチャーON、抜けたらOFF
+        gesture_on_l7 {
+            layers = <7>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        //gesture_on_l8 {
+        //    layers = <8>;
+        //    bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        //};
+
+        //gesture_on_l9 {
+        //    layers = <9>;
+        //    bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        //};
+    };
 
 &pinctrl {
     spi0_default: spi0_default {
