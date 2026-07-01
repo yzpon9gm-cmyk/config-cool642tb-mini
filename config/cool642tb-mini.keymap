@@ -6,7 +6,6 @@
 
 #define MOUSE 4
 #define SCROLL 5
-#define NUM 6
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 // OS設定を日本語キーボードのまま使用するための変換定義
@@ -130,7 +129,7 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        FUNCTION {
+        layer_1 {
             bindings = <
 &kp F10              &kp F11  &kp F12  &kp LESS_THAN    &kp GREATER_THAN                         &trans  &kp HOME  &kp UP_ARROW  &kp END          &none
 &kp F7               &kp F8   &kp F9   &kp JP_LPAREN    &kp JP_RPAREN     &kp UNDER      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &none
@@ -139,7 +138,7 @@
             >;
         };
 
-        NUM {
+        layer_2 {
             bindings = <
 &kp LS(EXCL)      &kp JP_DQUOTE  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                                &kp KP_ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp JP_PLUS
 &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_TILDE   &kp JP_YEN    &kp JP_PIPE    &kp LS(LT)      &kp JP_COLON  &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
@@ -148,7 +147,7 @@
             >;
         };
 
-        ARROW {
+        layer_3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -186,7 +185,25 @@
             >;
         };
 
-        layer_7 {
+        GESTURE_L7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        GESTURE_L8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        GESTURE_L9 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
