@@ -128,9 +128,3 @@
     create_tab { pattern = <GESTURE_UP>; bindings = <&kp T>; };
     close_tab { pattern = <GESTURE_DOWN>; bindings = <&kp W>; };
 };
-
-&trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>; /* 実際のデバイスノード名に合わせる */
-    input-processors = <&zip_mouse_gesture>;
-};

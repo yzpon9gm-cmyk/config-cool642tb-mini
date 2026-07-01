@@ -38,9 +38,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        AML {
-            input-processors = <&zip_temp_layer MOUSE_LAYER 100000>;
-        };
+        input-processors = <&zip_temp_layer MOUSE_LAYER 100000>;
 
         gest_on_l7 {
             layers = <7>;
