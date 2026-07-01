@@ -57,7 +57,6 @@
         //    input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
         //};
     };
-};
 
     layer_listeners {
         compatible = "zmk,layer-listeners";
@@ -78,6 +77,7 @@
         //    bindings = <&mouse_gesture_on &mouse_gesture_off>;
         //};
     };
+};
 
 &pinctrl {
     spi0_default: spi0_default {
