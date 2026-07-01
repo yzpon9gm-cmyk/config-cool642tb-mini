@@ -5,11 +5,6 @@
 
 #define MOUSE_LAYER 4
 
-#define GESTURE_LEFT 0
-#define GESTURE_RIGHT 1
-#define GESTURE_UP 2
-#define GESTURE_DOWN 3
-
 &default_transform {
     col-offset = <6>;
 };
