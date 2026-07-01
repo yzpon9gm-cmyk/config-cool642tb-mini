@@ -46,6 +46,15 @@
             input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
         };
     };
+
+    layer_listeners {
+    compatible = "zmk,layer-listeners";
+    // Layer 7 に入ったらジェスチャーON、抜けたらOFF
+        gesture_on_l7 {
+            layers = <7>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
 };
 
 &pinctrl {

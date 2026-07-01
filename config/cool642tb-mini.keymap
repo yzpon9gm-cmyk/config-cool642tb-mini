@@ -7,7 +7,7 @@
 
 #define MOUSE 4
 #define SCROLL 5
-//#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
@@ -213,12 +213,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-&mouse_gesture // Activates mouse gesture while it is pressed
-                &mouse_gesture_on // Activates mouse gesture on each press
-                &mouse_gesture_off // Deactivates mouse gesture on each press
-                &mouse_gesture_toggle // Toggle mouse gesture on/off on each press
-                &mouse_gesture_kp 0 A // Activates mouse gesture while held, and triggers &kp A on tap
-                &mouse_gesture_mkp 0 RCLK // Activates mouse gesture while held, and triggers right click on tap
             >;
         };
 
