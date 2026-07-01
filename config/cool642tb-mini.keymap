@@ -49,7 +49,7 @@
 
 &zip_mouse_gesture {
     enable-eager-mode;
-    stroke-size = <5>;
+    stroke-size = <50>;
     movement-threshold = <6>;
     idle-timeout-ms = <100>;
     gesture-cooldown-ms = <120>;
